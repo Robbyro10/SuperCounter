@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SuperCounter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
+</head>
+<body> 
+    <nav class="navbar">
+        <a href="index.html">Home </a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <h1 class = "title">SuperCounter</h1> 
+    <p id="message">How far can you get?</p>
+    <h1 id = "number"> 0 </h1>
+    <div class="container">
+        <button 
+        class = "btn" 
+        id="btn-1"
+        onClick = "addOne()"
+        >ADD ONE</button>
+
+        <button 
+        class = "btn" 
+        id="btn-2"
+        onClick = "reset()"
+        >RESET</button>
+    </div> 
+
+    <script defer src="app.js"></script>
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading">
+                <h2>About</h2>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading">
+                <h2>Contact Us</h2>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-heading">
+                <h2>Social Media</h2>
+                <a href="https://www.instagram.com/juan_hedderich/" 
+                target="_blank">Instagram</a>
+                <a href="https://github.com/Robbyro10" 
+                target="_blank">Github</a>
+                <a href="https://twitter.com/JGHedderich" 
+                target="_blank">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
