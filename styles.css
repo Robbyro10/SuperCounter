@@ -27,7 +27,7 @@ html, body{
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #003049;
+    background-color: hsl(201, 100%, 14%);
 }
 
 nav{
@@ -45,6 +45,7 @@ nav{
     border-style:solid;
     border-left: #d62828;
     border-right: #d62828;
+    z-index:1;
 }
 
 .title{
@@ -85,7 +86,7 @@ nav{
 .calc-container{
     display: grid;
     grid-template-columns: repeat(4, 5rem);
-    grid-template-rows: repeat(5, 5rem);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 5rem);
     justify-content: center;
     margin: auto;
     width: fit-content;
@@ -104,6 +105,31 @@ nav{
     transition: ease-out 0.2s;
 }
 
+#screen {
+    background-color: hsl(201, 100%, 8%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    grid-column: 1 / -1;  
+    border-radius: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 6rem;
+}
+
+#screen >h1,p{
+    margin: 1rem;
+    margin-top: 0.5;
+    font-weight: 200;
+    margin-left: auto;
+}
+
+#screen > p{
+    margin-bottom: 0;
+}
+
 .calc-container > button:hover{
     background-color: hsl(50, 34%, 72%);
     color: white
@@ -115,12 +141,8 @@ nav{
 }
 
 #button-0{
-    width: 10.5rem;
+    grid-column: span 2;
     border-radius: 40px;
-}
-
-#button-coma, #button-equals{
-    left: 5.5rem;
 }
 
 .side-operator{

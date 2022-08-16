@@ -7,6 +7,7 @@
     <title>Calculator - SuperCounter</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="images/Favicon.png">
+    <script defer src="app.js"></script>
 </head>
 <body> 
     <nav class="navbar">
@@ -19,29 +20,33 @@
         <div id="main">
             <h1 class="title">Try my Calculator!</h1>
             <div class="calc-container">
-                <button class="top-button">CE</button>
-                <button  class="top-button">C</button>
-                <button class="top-button">%</button>
-                <button class="side-operator">÷</button>
+                <div id="screen">
+                    <p prev-operand id="value"></p>
+                    <h1 current-operand id="value"></h1>
+                </div>
+                <button data-clearCurrent class="top-button">CE</button>
+                <button data-clearAll class="top-button">C</button>
+                <button data-delete class="top-button">DEL</button>
+                <button data-operation class="side-operator">÷</button>
 
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="side-operator">×</button>
-
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="side-operator">−</button>
-
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="side-operator">+</button>
-
-                <button id="button-0">0</button>
-                <button id="button-coma">,</button>
-                <button id="button-equals" class="side-operator">=</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation id="x" class="side-operator">×</button>
+                
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation class="side-operator">−</button>
+                
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation class="side-operator">+</button>
+                
+                <button data-number id="button-0">0</button>
+                <button data-number>.</button>
+                <button data-equals class="side-operator">=</button>
             </div>
         </div>
     </div>
